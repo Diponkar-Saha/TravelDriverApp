@@ -1,0 +1,156 @@
+{
+  "project_info": {
+    "project_number": "792420892918",
+    "firebase_url": "https://niftytravelguide-e2e00-default-rtdb.firebaseio.com",
+    "project_id": "niftytravelguide-e2e00",
+    "storage_bucket": "niftytravelguide-e2e00.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792420892918:android:428e8132e9528c59ffacd7",
+        "android_client_info": {
+          "package_name": "com.example.admintravelapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "792420892918-euu6bg3iltenon5hou961conrdi9vcj0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZkVwhPmPGyOdg9C1tFDYC4mk-YEPuBmM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "792420892918-euu6bg3iltenon5hou961conrdi9vcj0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792420892918:android:105c2c05da662467ffacd7",
+        "android_client_info": {
+          "package_name": "com.example.niftytraveladmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "792420892918-euu6bg3iltenon5hou961conrdi9vcj0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZkVwhPmPGyOdg9C1tFDYC4mk-YEPuBmM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "792420892918-euu6bg3iltenon5hou961conrdi9vcj0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792420892918:android:990f92a66fff43e3ffacd7",
+        "android_client_info": {
+          "package_name": "com.example.publicc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "792420892918-euu6bg3iltenon5hou961conrdi9vcj0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZkVwhPmPGyOdg9C1tFDYC4mk-YEPuBmM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "792420892918-euu6bg3iltenon5hou961conrdi9vcj0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792420892918:android:50ac7369cf910f83ffacd7",
+        "android_client_info": {
+          "package_name": "com.example.traveldriver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "792420892918-euu6bg3iltenon5hou961conrdi9vcj0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZkVwhPmPGyOdg9C1tFDYC4mk-YEPuBmM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "792420892918-euu6bg3iltenon5hou961conrdi9vcj0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792420892918:android:0fba762f1970cceaffacd7",
+        "android_client_info": {
+          "package_name": "com.example.traveldriverapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "792420892918-euu6bg3iltenon5hou961conrdi9vcj0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZkVwhPmPGyOdg9C1tFDYC4mk-YEPuBmM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "792420892918-euu6bg3iltenon5hou961conrdi9vcj0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

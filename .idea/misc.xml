@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/TravelDriverApp/app/src/main/res/drawable-v24/progress.xml" value="0.22205128205128205" />
+        <entry key="..\:/TravelDriverApp/app/src/main/res/font/expletus_sans.xml" value="0.13020833333333334" />
+        <entry key="..\:/TravelDriverApp/app/src/main/res/font/text_me_one.xml" value="0.22314814814814815" />
+        <entry key="..\:/TravelDriverApp/app/src/main/res/layout/activity_forgot_password.xml" value="0.18628359592215013" />
+        <entry key="..\:/TravelDriverApp/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/TravelDriverApp/app/src/main/res/layout/activity_register.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.2972560975609756" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

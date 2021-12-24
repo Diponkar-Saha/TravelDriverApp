@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TravelDriverApp</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Enter</string>
+
+    <string name="Click_here_to_register">Register</string>
+
+    <string name="name">Name</string>
+    <string name="register">Register</string>
+    <string name="feed">Feed</string>
+</resources>
