@@ -62,6 +62,11 @@ public class NotificationsFragment extends Fragment {
 
             }
         });
+        binding.buttonLogout.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                FirebaseAuth.getInstance().signOut();
+            }
+        });
 
         databaseReference.child(mAuth.getUid()).get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
             @Override
