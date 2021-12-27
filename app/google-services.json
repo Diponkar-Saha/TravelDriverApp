@@ -102,6 +102,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "792420892918-jeg8s55movb5fsjjmlogn2ip0fd81k9h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.traveldriver",
+            "certificate_hash": "166884408d9427247984cb84e91cb78e39917284"
+          }
+        },
+        {
           "client_id": "792420892918-euu6bg3iltenon5hou961conrdi9vcj0.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -130,6 +138,14 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "792420892918-v62chfurpcukab8cpovi7sdu8ol2e0t0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.traveldriverapp",
+            "certificate_hash": "166884408d9427247984cb84e91cb78e39917284"
+          }
+        },
         {
           "client_id": "792420892918-euu6bg3iltenon5hou961conrdi9vcj0.apps.googleusercontent.com",
           "client_type": 3

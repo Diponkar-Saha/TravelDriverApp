@@ -52,6 +52,7 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline6"
         app:layout_constraintStart_toStartOf="@+id/guideline5"
         app:layout_constraintTop_toBottomOf="@+id/Emaill"
+        app:passwordToggleEnabled="true"
         app:shapeAppearance="@style/Rounded">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -88,20 +89,60 @@
         app:layout_constraintStart_toStartOf="@+id/buttonLogin"
         app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
 
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView4"
+        android:layout_width="@dimen/margin_30_dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:src="@drawable/search"
+        app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/appCompatImageView5">
+
+    </androidx.appcompat.widget.AppCompatImageView>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView5"
+        android:layout_width="@dimen/margin_30_dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/facebook"
+        app:layout_constraintEnd_toStartOf="@+id/appCompatImageView4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/or">
+
+    </androidx.appcompat.widget.AppCompatImageView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="or"
+        android:textColor="@color/black"
+        android:textSize="@dimen/margin_20_dp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonRegisterHere"
+        app:layout_constraintStart_toStartOf="@+id/buttonRegisterHere"
+        app:layout_constraintTop_toBottomOf="@+id/forgotpass">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/forgotpass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="forgot password!!Please Click"
-        android:textStyle="bold"
         android:textColor="@color/purple_200"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/buttonRegisterHere"
         app:layout_constraintStart_toStartOf="@+id/buttonRegisterHere"
         app:layout_constraintTop_toBottomOf="@+id/buttonRegisterHere">
 
     </androidx.appcompat.widget.AppCompatTextView>
-
 
 
     <androidx.constraintlayout.widget.Guideline

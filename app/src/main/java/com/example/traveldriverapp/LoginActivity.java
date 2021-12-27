@@ -42,6 +42,21 @@ public class LoginActivity extends AppCompatActivity {
 
             }
         });
+        binding.appCompatImageView4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(LoginActivity.this, GoogleSignInActivity.class);
+
+                startActivity(intent);
+            }
+        });
+        binding.appCompatImageView5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(LoginActivity.this, FacebookAuthActivity.class);
+                startActivity(intent);
+            }
+        });
 
         binding.buttonRegisterHere.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

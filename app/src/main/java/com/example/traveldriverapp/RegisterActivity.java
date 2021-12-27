@@ -33,6 +33,22 @@ public class RegisterActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
+        binding.appCompatImageView4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(RegisterActivity.this, GoogleSignInActivity.class);
+
+                startActivity(intent);
+            }
+        });
+        binding.appCompatImageView5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(RegisterActivity.this, FacebookAuthActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
 
         binding.buttonRegister.setOnClickListener(new View.OnClickListener() {
