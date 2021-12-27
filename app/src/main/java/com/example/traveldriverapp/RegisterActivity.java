@@ -32,6 +32,9 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         mAuth = FirebaseAuth.getInstance();
+        Intent intent = getIntent();
+        String number = intent.getStringExtra("number");
+        binding.editTextPhone.setText(number);
 
         binding.appCompatImageView4.setOnClickListener(new View.OnClickListener() {
             @Override

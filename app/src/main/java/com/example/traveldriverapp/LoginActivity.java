@@ -60,7 +60,7 @@ public class LoginActivity extends AppCompatActivity {
 
         binding.buttonRegisterHere.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), RegisterActivity.class);
+                Intent i = new Intent(getApplicationContext(), NumberVerifyActivity.class);
                 startActivity(i);
 
             }
