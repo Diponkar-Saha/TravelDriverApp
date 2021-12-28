@@ -86,7 +86,10 @@ public class NotificationsFragment extends Fragment {
                         String email = String.valueOf(dataSnapshot.child("email").getValue());
                         String name = String.valueOf(dataSnapshot.child("name").getValue());
 
-                        binding.nameTextView.setText(phone);
+//                        if(!phone.equals("")){
+//                            binding.nameTextView.setText(phone);
+//                        }
+
                         binding.emailTextView.setText(email);
                         binding.textName.setText(name);
                         String image = String.valueOf(dataSnapshot.child("image").getValue());

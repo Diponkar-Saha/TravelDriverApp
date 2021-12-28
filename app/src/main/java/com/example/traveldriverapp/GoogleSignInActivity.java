@@ -98,6 +98,7 @@ public class GoogleSignInActivity extends AppCompatActivity {
                             hashMap.put("location","");
                             hashMap.put("image","");
                             hashMap.put("cover","");
+                            hashMap.put("status","");
                             FirebaseDatabase database=FirebaseDatabase.getInstance();
 
                             DatabaseReference reference=database.getReference("Drivers");

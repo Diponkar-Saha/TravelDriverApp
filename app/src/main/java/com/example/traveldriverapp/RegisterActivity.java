@@ -102,6 +102,7 @@ public class RegisterActivity extends AppCompatActivity {
                             hashMap.put("location",binding.editTextLocation.getText().toString());
                             hashMap.put("image","");
                             hashMap.put("cover","");
+                            hashMap.put("status","");
                             FirebaseDatabase database=FirebaseDatabase.getInstance();
 
                             DatabaseReference reference=database.getReference("Drivers");

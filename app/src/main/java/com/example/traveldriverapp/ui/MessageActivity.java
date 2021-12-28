@@ -31,6 +31,8 @@ import com.example.traveldriverapp.ui.dashboard.notification.Data;
 import com.example.traveldriverapp.ui.dashboard.notification.MyResponse;
 import com.example.traveldriverapp.ui.dashboard.notification.Sender;
 import com.example.traveldriverapp.ui.dashboard.notification.Token;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -56,7 +58,7 @@ public class MessageActivity extends AppCompatActivity {
     RecyclerView recyclerView;
 
     CircleImageView profile_image;
-    TextView username;
+    TextView username,online,location;;
     FirebaseUser fuser;
     DatabaseReference reference;
     ImageButton btn_send;
@@ -85,6 +87,8 @@ public class MessageActivity extends AppCompatActivity {
 
         profile_image = findViewById(R.id.profile_image);
         username = findViewById(R.id.username);
+        online = findViewById(R.id.online);
+        location = findViewById(R.id.userlocation);
         btn_send = findViewById(R.id.btn_send);
         text_send = findViewById(R.id.text_send);
         mUser = FirebaseAuth.getInstance();
@@ -121,17 +125,65 @@ public class MessageActivity extends AppCompatActivity {
 
         reference = FirebaseDatabase.getInstance().getReference("Users").child(userid);
 
+        reference.get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
+            @Override
+            public void onComplete(@NonNull Task<DataSnapshot> task) {
+
+                if (task.isSuccessful()){
+
+                    if (task.getResult().exists()){
+
+                        DataSnapshot dataSnapshot = task.getResult();
+                        String name = String.valueOf(dataSnapshot.child("name").getValue());
+                        String location1 = String.valueOf(dataSnapshot.child("location").getValue());
+                        String online1 = String.valueOf(dataSnapshot.child("status").getValue());
+
+                        if(location1.equals("")){
+                            location.setText("");
+                        }else{
+                            location.setText(location1);
+                        }
+                        if(online1.equals("")){
+                            online.setText("offline");
+                        }else{
+                            online.setText(online1);
+                        }
+                        username.setText(name);
+
+
+
+                        String image = String.valueOf(dataSnapshot.child("image").getValue());
+                        Glide.with(getApplicationContext())
+                                .load(image)
+                                .placeholder(R.drawable.sample_img)
+                                .into(profile_image);
+
+
+                    }else {
+
+
+                    }
+
+
+                }else {
+
+
+                }
+
+            }
+        });
+
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 User user = dataSnapshot.getValue(User.class);
-                username.setText(user.getName());
-                if (user.getImage().equals("")){
-                    profile_image.setImageResource(R.drawable.sample_img);
-                } else {
-                    //and this
-                    Glide.with(getApplicationContext()).load(user.getImage()).into(profile_image);
-                }
+//                username.setText(user.getName());
+//                if (user.getImage().equals("")){
+//                    profile_image.setImageResource(R.drawable.sample_img);
+//                } else {
+//                    //and this
+//                    Glide.with(getApplicationContext()).load(user.getImage()).into(profile_image);
+//                }
 
                 readMesagges(fuser.getUid(), userid, user.getImage());
             }
