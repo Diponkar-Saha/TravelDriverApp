@@ -37,35 +37,6 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:792420892918:android:105c2c05da662467ffacd7",
-        "android_client_info": {
-          "package_name": "com.example.niftytraveladmin"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "792420892918-euu6bg3iltenon5hou961conrdi9vcj0.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyBZkVwhPmPGyOdg9C1tFDYC4mk-YEPuBmM"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "792420892918-euu6bg3iltenon5hou961conrdi9vcj0.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
         "mobilesdk_app_id": "1:792420892918:android:990f92a66fff43e3ffacd7",
         "android_client_info": {
           "package_name": "com.example.publicc"
@@ -73,39 +44,10 @@
       },
       "oauth_client": [
         {
-          "client_id": "792420892918-euu6bg3iltenon5hou961conrdi9vcj0.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyBZkVwhPmPGyOdg9C1tFDYC4mk-YEPuBmM"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "792420892918-euu6bg3iltenon5hou961conrdi9vcj0.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:792420892918:android:50ac7369cf910f83ffacd7",
-        "android_client_info": {
-          "package_name": "com.example.traveldriver"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "792420892918-jeg8s55movb5fsjjmlogn2ip0fd81k9h.apps.googleusercontent.com",
+          "client_id": "792420892918-09p9ijtp42071o2u9qs7clnf7gi44rj8.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.traveldriver",
+            "package_name": "com.example.publicc",
             "certificate_hash": "166884408d9427247984cb84e91cb78e39917284"
           }
         },
