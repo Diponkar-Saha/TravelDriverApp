@@ -1,6 +1,7 @@
 package com.example.traveldriverapp.ui.notifications;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -16,6 +17,8 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.Navigation;
 
 import com.bumptech.glide.Glide;
+import com.example.traveldriverapp.FacebookAuthActivity;
+import com.example.traveldriverapp.LoginActivity;
 import com.example.traveldriverapp.R;
 import com.example.traveldriverapp.databinding.FragmentNotificationsBinding;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -65,6 +68,8 @@ public class NotificationsFragment extends Fragment {
         binding.buttonLogout.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 FirebaseAuth.getInstance().signOut();
+                Intent intent=new Intent(requireContext(), LoginActivity.class);
+                startActivity(intent);
             }
         });
 
