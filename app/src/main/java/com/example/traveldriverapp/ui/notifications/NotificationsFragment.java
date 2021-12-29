@@ -40,12 +40,7 @@ public class NotificationsFragment extends Fragment {
     DatabaseReference databaseReference;
     private FirebaseAuth mAuth;
 
-    Uri imageUri;
-    String myUri;
-    StorageTask uploadTask;
-    StorageReference storageReference;
-    ProgressDialog progressDialog;
-    String change="No";
+
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -86,9 +81,9 @@ public class NotificationsFragment extends Fragment {
                         String email = String.valueOf(dataSnapshot.child("email").getValue());
                         String name = String.valueOf(dataSnapshot.child("name").getValue());
 
-//                        if(!phone.equals("")){
-//                            binding.nameTextView.setText(phone);
-//                        }
+                        if(!phone.equals("")){
+                            binding.nameTextView.setText(phone);
+                        }
 
                         binding.emailTextView.setText(email);
                         binding.textName.setText(name);

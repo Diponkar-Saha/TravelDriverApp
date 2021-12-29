@@ -91,8 +91,9 @@ public class GoogleSignInActivity extends AppCompatActivity {
 
                             String uid=user.getUid();
                             HashMap<Object,String> hashMap=new HashMap<>();
-                            hashMap.put("email",email);
                             hashMap.put("uid",uid);
+                            hashMap.put("email",email);
+
                             hashMap.put("name",name);
                             hashMap.put("phone",phone);
                             hashMap.put("location","");

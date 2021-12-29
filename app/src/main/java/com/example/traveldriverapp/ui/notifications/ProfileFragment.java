@@ -24,6 +24,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -52,6 +53,7 @@ public class ProfileFragment extends Fragment {
     ProgressDialog progressDialog;
     String change="No";
 
+    String location,status,image;
 
 
 
@@ -84,7 +86,10 @@ public class ProfileFragment extends Fragment {
                         String phone = String.valueOf(dataSnapshot.child("phone").getValue());
                         String email = String.valueOf(dataSnapshot.child("email").getValue());
                         String name = String.valueOf(dataSnapshot.child("name").getValue());
-                        String image = String.valueOf(dataSnapshot.child("image").getValue());
+                        image = String.valueOf(dataSnapshot.child("image").getValue());
+                        location = String.valueOf(dataSnapshot.child("location").getValue());
+                        status = String.valueOf(dataSnapshot.child("status").getValue());
+                       // image = String.valueOf(dataSnapshot.child("image").getValue());
 
                         binding.nameTextView.setText(phone);
                         binding.emailTextView.setText(email);
@@ -144,10 +149,33 @@ public class ProfileFragment extends Fragment {
 
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Drivers");
 
+        FirebaseUser user = mAuth.getCurrentUser();
+        String uid=user.getUid();
+
 
         HashMap<String, Object> hashMap= new HashMap<>();
 
-        hashMap.put("image", myUri);
+        hashMap.put("uid",uid);
+        if(location.equals("") ){
+            hashMap.put("location","");
+        }else{
+            hashMap.put("location",location);
+
+        }
+        if(status.equals("") ){
+            hashMap.put("status","");
+
+        }else{
+            hashMap.put("status",status);
+
+        }
+        if(image.equals("") ){
+            hashMap.put("image","");
+
+        }else{
+            hashMap.put("image",image);
+        }
+        hashMap.put("cover","");
         hashMap.put("name", binding.textName.getText().toString());
         hashMap.put("phone", binding.nameTextView.getText().toString());
         hashMap.put("email",  binding.emailTextView.getText().toString());
@@ -218,8 +246,26 @@ public class ProfileFragment extends Fragment {
 
                     DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Drivers");
 
+                    FirebaseUser user = mAuth.getCurrentUser();
+                    String uid=user.getUid();
 
                     HashMap<String, Object> hashMap= new HashMap<>();
+                    hashMap.put("uid",uid);
+                    if(!location.equals("") ){
+                        hashMap.put("location",location);
+                    }else{
+                        hashMap.put("location","");
+                    }
+                    if(!status.equals("") ){
+                        hashMap.put("status",status);
+                    }else{
+                        hashMap.put("status","");
+                    }
+                    if(!status.equals("") ){
+                        hashMap.put("status",status);
+                    }else{
+                        hashMap.put("status","");
+                    }
 
                     hashMap.put("image", myUri);
                     hashMap.put("name", binding.textName.getText().toString());
